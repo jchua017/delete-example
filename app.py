@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.set_page_config(page_title='Predict Flower Species', page_icon='🌷', layout='wide', initial_sidebar_state='expanded')
 
 # Set title of the app
-st.title('🌷 Predict Flower Species')
+st.title('🌷🌷  Predict Flower Species🌷 🌷 ')
 
 # Load data
 df = pd.read_csv('iris.csv')
@@ -40,7 +40,7 @@ st.subheader('Exploratory Data Analysis')
 st.write('The data is grouped by the class and the variable mean is computed for each class.')
 groupby_species_mean = df.groupby('Species').mean()
 st.write(groupby_species_mean)
-st.bar_chart(groupby_species_mean.T)
+st.line_chart(groupby_species_mean.T)
 
 # Print input features
 st.subheader('Variables in Data Set')
